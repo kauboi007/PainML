@@ -36,12 +36,12 @@ int main(){
     float eps=1e-3;
     float rate=1e-3;
     printf("initial:%f\n",cost(w,b));
-    for(int i=0;i<1500;++i){
+    for(size_t i=0;i<20000;++i){
         float dw=(cost(w+eps,b)-cost(w,b))/eps;
         float db=(cost(w,b+eps)-cost(w,b))/eps;
         w-=rate*dw;
         b-=rate*db;
-        //printf("iteration %d : %f\n",i+1,cost(w));
+        printf("iteration %d - cost :%f , bias: %f \n",i+1,cost(w,b),b);
     }
     printf("final:%f\n",w);
     return 0;

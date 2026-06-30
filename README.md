@@ -6,3 +6,5 @@ this clanker 2 parameters
 
 very close
 open ai is shaking rn
+
+added a ML model to predict OR and AND gates 
